@@ -175,16 +175,32 @@ export default async function handler(req, res) {
       <div style="font-family: Arial; padding:20px;">
         <h2>Hi ${name},</h2>
 
-        <p>Thank you for contacting <strong>Lyvan</strong> 🙌</p>
+        <p>
+        Thank you for choosing <strong>Lyvan</strong> and placing your trust in us 🙌
+        </p>
 
-        <p>We have successfully received your request.</p>
+        <p>
+        We’ve successfully received your request, and we’re excited to be part of your journey.
+        </p>
 
-        <p>Our team will get back to you within <strong>few hours</strong>.</p>
+        <p>
+        At Lyvan, we believe in building meaningful digital experiences that help you grow and stand out.
+        </p>
+
+        <p>
+        Our team is reviewing your request and will get back to you within <strong>a few hours</strong>.
+        </p>
 
         <br/>
 
-        <p>Best regards,<br/>
-        <strong>Lyvan Team</strong></p>
+        <p>
+        Looking forward to working together and creating something great 🚀
+        </p>
+
+        <p>
+        Warm regards,<br/>
+        <strong>Team Lyvan</strong>
+        </p>
       </div>
       `,
     });
