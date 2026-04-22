@@ -1,0 +1,187 @@
+/* Modern SaaS UI Foundation & Tokens */
+
+:root {
+  /* Color Palette */
+  --saas-bg: #f8fafc;
+  --saas-card: #ffffff;
+  --saas-border: #e2e8f0;
+  --saas-text-heading: #0f172a;
+  --saas-text-body: #475569;
+  --saas-text-muted: #64748b;
+  --saas-primary: #0f172a;
+  --saas-primary-hover: #1e293b;
+  --saas-accent: #3b82f6;
+  --saas-accent-hover: #2563eb;
+  
+  /* Geometry & Scaling */
+  --saas-radius-xl: 32px;
+  --saas-radius-lg: 24px;
+  --saas-radius-md: 16px;
+  --saas-radius-pill: 9999px;
+  
+  /* Shadows */
+  --saas-shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.03);
+  --saas-shadow-md: 0 12px 32px rgba(15, 23, 42, 0.05);
+  --saas-shadow-lg: 0 24px 64px rgba(15, 23, 42, 0.08);
+  --saas-shadow-hover: 0 20px 48px rgba(15, 23, 42, 0.1);
+  --saas-shadow-accent: 0 8px 24px rgba(59, 130, 246, 0.25);
+}
+
+/* Global Reset & Typography */
+body {
+  background-color: var(--saas-bg);
+  color: var(--saas-text-body);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--saas-text-heading);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--saas-text-body);
+  margin-bottom: 1.25rem;
+}
+
+/* Base Buttons */
+.btn {
+  border-radius: var(--saas-radius-pill) !important;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none !important;
+}
+
+.btn-primary {
+  background: var(--saas-primary) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2) !important;
+}
+
+.btn-primary:hover {
+  background: var(--saas-primary-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25) !important;
+}
+
+.btn-accent {
+  background: var(--saas-accent) !important;
+  color: #fff !important;
+  box-shadow: var(--saas-shadow-accent) !important;
+}
+
+.btn-accent:hover {
+  background: var(--saas-accent-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.35) !important;
+}
+
+.btn-outline, .btn-outline-secondary {
+  background: transparent !important;
+  color: var(--saas-text-heading) !important;
+  border: 1px solid var(--saas-border) !important;
+}
+
+.btn-outline:hover, .btn-outline-secondary:hover {
+  background: #f1f5f9 !important;
+  transform: translateY(-2px);
+}
+
+/* Structure & Layout */
+.section {
+  padding: 7rem 0 7rem !important;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  color: var(--saas-text-muted) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  margin-bottom: 1rem !important;
+}
+
+.section-title h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 5rem !important;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* Modern SaaS Cards */
+.saas-card, .card, .glass-panel {
+  background: var(--saas-card) !important;
+  border-radius: var(--saas-radius-lg) !important;
+  box-shadow: var(--saas-shadow-md) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden;
+}
+
+.saas-card:hover:not(.no-hover), .card:hover:not(.no-hover), .glass-panel:hover:not(.no-hover) {
+  transform: translateY(-8px) !important;
+  box-shadow: var(--saas-shadow-lg) !important;
+}
+
+.card-img-top {
+  border-radius: var(--saas-radius-lg) var(--saas-radius-lg) 0 0 !important;
+  object-fit: cover;
+}
+
+/* UI Components overrides */
+.rounded, .rounded-1, .rounded-2, .rounded-3, .rounded-4, .rounded-5 {
+  border-radius: var(--saas-radius-lg) !important;
+}
+
+img {
+  border-radius: var(--saas-radius-md);
+  max-width: 100%;
+}
+
+.form-control, .form-select {
+  border-radius: var(--saas-radius-md) !important;
+  border: 1px solid var(--saas-border) !important;
+  background: var(--saas-bg) !important;
+  color: var(--saas-text-heading) !important;
+  padding: 1rem 1.5rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--saas-accent) !important;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15) !important;
+  background: #fff !important;
+  outline: none;
+}
+
+textarea.form-control {
+  border-radius: var(--saas-radius-md) !important;
+}
+
+/* Utility overrides */
+.bg-light { background-color: var(--saas-bg) !important; }
+.text-secondary { color: var(--saas-text-body) !important; }
+.text-primary { color: var(--saas-accent) !important; }

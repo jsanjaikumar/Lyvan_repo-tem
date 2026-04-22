@@ -1,0 +1,33 @@
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 15, 28, 0.78);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  z-index: 1200;
+}
+
+.image-modal__panel {
+  max-width: min(1100px, 96vw);
+  max-height: 92vh;
+  background: var(--saas-bg);
+  border-radius: var(--saas-radius-xl);
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--saas-border);
+}
+
+.image-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.image-modal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

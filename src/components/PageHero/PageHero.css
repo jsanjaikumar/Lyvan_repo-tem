@@ -1,0 +1,55 @@
+.page-hero {
+  min-height: 280px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: var(--saas-radius-xl);
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.1);
+  color: #fff;
+  margin-top: 80px;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.4),
+    rgba(15, 23, 42, 0.8)
+  );
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hover-white:hover {
+  color: #fff !important;
+}
+
+.page-hero--about {
+  background-image: url("/assets/img/about-page-title-bg-new.jpg");
+}
+
+.page-hero--services {
+  background-image: url("/assets/img/services-page-title-bg.jpg");
+}
+
+.page-hero--portfolio {
+  background-image: url("/assets/img/portfolio-page-title-bg.jpg");
+}
+
+.page-hero--contact {
+  background-image: url("/assets/img/contact-page-title-bg.jpg");
+}
+
+.page-hero--voice {
+  background-image: url("/assets/img/hero-bg-new.jpg");
+}

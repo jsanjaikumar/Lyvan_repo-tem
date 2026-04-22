@@ -1,0 +1,28 @@
+.scroll-top-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  background: #1b2f45;
+  color: #fff;
+  box-shadow: 0 14px 35px rgba(27, 47, 69, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+  z-index: 1050;
+}
+
+.scroll-top-button--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}

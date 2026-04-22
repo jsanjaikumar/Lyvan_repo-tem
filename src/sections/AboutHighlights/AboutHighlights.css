@@ -1,0 +1,161 @@
+.about-highlights {
+  position: relative;
+}
+
+.about-highlights__card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.about-highlights__card:hover {
+  border-color: rgba(13, 110, 253, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.card-header i {
+  font-size: 1.75rem;
+}
+
+.card-header h4 {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.specializations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specializations-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.specializations-list li:last-child {
+  border-bottom: none;
+}
+
+.specializations-list i {
+  color: #10b981;
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.specializations-list span {
+  font-weight: 500;
+}
+
+.specializations-list--compact li {
+  padding: 0.55rem 0;
+  font-size: 0.92rem;
+}
+
+.about-highlights__text-block {
+  margin-bottom: 0.8rem;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.advantage-item {
+  text-align: center;
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.advantage-item:hover {
+  background: #f3f4f6;
+  transform: translateY(-4px);
+}
+
+.advantage-item i {
+  font-size: 1.75rem;
+  color: #0d6efd;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.advantage-item p {
+  color: #4b5563;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.section-feature {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.section-feature:hover {
+  border-color: rgba(13, 110, 253, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.section-feature h4 {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-feature p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .advantages-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .card-header h4 {
+    font-size: 1rem;
+  }
+}

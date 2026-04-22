@@ -1,0 +1,159 @@
+/* Service details layout */
+.service-details {
+  position: relative;
+}
+
+.service-details .glass-panel {
+  border: 1px solid var(--saas-border);
+}
+
+/* Left navigation */
+.service-details__nav {
+  position: sticky;
+  top: 104px;
+}
+
+.service-details__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.service-details__tab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.88rem 1rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.service-details__tab i {
+  color: #64748b;
+  transition: color 0.2s ease;
+}
+
+.service-details__tab:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  transform: translateX(4px);
+  color: #0f172a;
+}
+
+.service-details__tab:hover i {
+  color: #334155;
+}
+
+.service-details__tab:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.35);
+  outline-offset: 2px;
+}
+
+.service-details__tab--active {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-color: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.22);
+}
+
+.service-details__tab--active i,
+.service-details__tab--active:hover i {
+  color: #93c5fd;
+}
+
+.service-details__tab--active:hover {
+  transform: translateX(4px);
+  color: #ffffff;
+}
+
+/* Details panel */
+.service-details__image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border: 1px solid #e2e8f0;
+}
+
+.service-details__header h3 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+}
+
+.service-details__bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.service-details__bullets li {
+  position: relative;
+  padding-left: 1.65rem;
+  color: #334155;
+}
+
+.service-details__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.best-for-box {
+  background: linear-gradient(145deg, #f8fafc 0%, #eef2ff 100%);
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+
+.service-details__cta .btn {
+  min-width: 200px;
+}
+
+/* Responsive improvements */
+@media (max-width: 991.98px) {
+  .service-details__nav {
+    position: static;
+  }
+
+  .service-details__tabs {
+    gap: 0.5rem;
+  }
+
+  .service-details__tab {
+    padding: 0.78rem 0.9rem;
+    font-size: 0.97rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-details__image {
+    max-height: 230px;
+  }
+
+  .service-details .glass-panel {
+    padding: 1rem !important;
+  }
+
+  .service-details__cta .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
