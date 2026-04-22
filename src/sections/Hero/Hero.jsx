@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Hero.css";
+import heroImage from "../../../assets/img/hero-bg-new.jpg";
 
 export default function Hero() {
   return (
@@ -52,7 +53,7 @@ export default function Hero() {
                 style={{ height: "400px", backgroundColor: "#aba195" }}
               >
                 <img
-                  src="/assets/img/hero-bg-new.jpg"
+                  src={heroImage}
                   alt="LYVAN workflow"
                   className="w-100 h-100"
                   style={{ objectFit: "cover" }}

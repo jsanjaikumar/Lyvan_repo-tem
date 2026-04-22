@@ -1,4 +1,5 @@
 import "./AboutIntro.css";
+import aboutImage from "../../../assets/img/about-new.jpg";
 
 export default function AboutIntro() {
   return (
@@ -8,7 +9,7 @@ export default function AboutIntro() {
           <div className="col-lg-5">
             <div className="about__image-wrapper">
               <img
-                src="/assets/img/about-new.jpg"
+                src={aboutImage}
                 alt="About LYVAN"
                 className="img-fluid rounded-4 shadow-sm"
               />

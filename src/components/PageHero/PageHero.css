@@ -33,23 +33,3 @@
 .hover-white:hover {
   color: #fff !important;
 }
-
-.page-hero--about {
-  background-image: url("/assets/img/about-page-title-bg-new.jpg");
-}
-
-.page-hero--services {
-  background-image: url("/assets/img/services-page-title-bg.jpg");
-}
-
-.page-hero--portfolio {
-  background-image: url("/assets/img/portfolio-page-title-bg.jpg");
-}
-
-.page-hero--contact {
-  background-image: url("/assets/img/contact-page-title-bg.jpg");
-}
-
-.page-hero--voice {
-  background-image: url("/assets/img/hero-bg-new.jpg");
-}

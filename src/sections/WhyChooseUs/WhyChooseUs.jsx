@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { whyUsSlides } from "../../assets/siteData";
 import "./WhyChooseUs.css";
+import whyUsImage from "../../../assets/img/why-us-bg.jpg";
 
 export default function WhyChooseUs() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -25,7 +26,7 @@ export default function WhyChooseUs() {
         <div className="row g-4 align-items-stretch">
           <div className="col-xl-5">
             <div className="why-choose-us__image-wrap shadow-sm">
-              <img src="/assets/img/why-us-bg.jpg" alt="Why LYVAN" />
+              <img src={whyUsImage} alt="Why LYVAN" />
             </div>
           </div>
           <div className="col-xl-7">

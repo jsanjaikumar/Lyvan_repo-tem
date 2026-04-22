@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
+import lyvanLogo from "../../../assets/img/lyvan/lyvan-logo.jpeg";
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
@@ -58,7 +59,7 @@ export default function Header() {
     >
       <div className="app-header__inner" ref={headerInnerRef}>
         <Link to="/" className="app-header__brand">
-          <img src="/assets/img/lyvan/lyvan-logo.jpeg" alt="LYVAN" />
+          <img src={lyvanLogo} alt="LYVAN" />
         </Link>
 
         <nav
