@@ -111,10 +111,12 @@ export default async function handler(req, res) {
   // MAIL TRANSPORTER
   // ================================
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtpout.secureserver.net",
+    port: 465,
+    secure: true,
     auth: {
-      user: EMAIL,
-      pass: APP_PASSWORD,
+      user: EMAIL, // project@lyvan.com
+      pass: APP_PASSWORD, // your email password
     },
   });
 
