@@ -120,7 +120,7 @@ export default function Contact() {
                 <i className="bi bi-info-circle"></i>
                 <p>
                   <strong>Response Time:</strong> We typically respond to
-                  inquiries within 24 hours during business days.
+                  inquiries within few hours during business days.
                 </p>
               </div>
 
