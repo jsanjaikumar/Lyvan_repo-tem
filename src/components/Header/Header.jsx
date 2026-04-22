@@ -9,6 +9,9 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const headerInnerRef = useRef(null);
   const location = useLocation();
+  const canUseHover =
+    typeof window !== "undefined" &&
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
   useEffect(() => {
     setNavOpen(false);
@@ -77,8 +80,12 @@ export default function Header() {
             </li>
             <li
               className={`dropdown ${servicesOpen ? "open" : ""}`}
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
+              onMouseEnter={() => {
+                if (canUseHover) setServicesOpen(true);
+              }}
+              onMouseLeave={() => {
+                if (canUseHover) setServicesOpen(false);
+              }}
             >
               <button
                 type="button"

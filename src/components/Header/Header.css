@@ -60,7 +60,7 @@
   position: relative;
 }
 
-.app-header__menu a,
+.app-header__menu > li > a,
 .app-header__dropdown {
   color: var(--saas-text-body);
   font-weight: 600;
@@ -73,8 +73,8 @@
   border: none;
 }
 
-.app-header__menu a:hover,
-.app-header__menu a.active,
+.app-header__menu > li > a:hover,
+.app-header__menu > li > a.active,
 .app-header__dropdown:hover {
   color: var(--saas-primary);
   background: var(--saas-bg);
@@ -110,6 +110,14 @@
   width: 100%;
   padding: 0.75rem 1rem;
   border-radius: 8px;
+  text-decoration: none;
+}
+
+.app-header__dropdown-menu a:hover,
+.app-header__dropdown-menu a:focus,
+.app-header__dropdown-menu a:active,
+.app-header__dropdown-menu a.active {
+  text-decoration: none;
 }
 
 .app-header__actions {
@@ -165,7 +173,7 @@
     width: 100%;
   }
 
-  .app-header__menu a,
+  .app-header__menu > li > a,
   .app-header__dropdown {
     width: 100%;
     padding: 1rem;
@@ -182,14 +190,16 @@
     box-shadow: var(--saas-shadow-sm);
     border: 1px solid var(--saas-border);
     background: var(--saas-bg);
-    margin-top: 0.5rem;
+    margin-top: 0;
     width: 100%;
+    min-width: 100%;
     opacity: 1;
     visibility: visible;
     display: none;
     z-index: 2100;
-    max-height: 70vh;
+    max-height: min(60vh, 320px);
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     padding: 0.45rem;
     border-radius: 14px;
@@ -197,10 +207,34 @@
 
   .dropdown.open .app-header__dropdown-menu {
     display: block;
+    margin-top: 0.5rem;
+    left: 0;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown:hover .app-header__dropdown-menu {
+    left: 0;
+    transform: none;
   }
 
   .app-header__dropdown-menu a {
-    padding: 0.8rem 0.95rem;
+    display: block;
+    width: 100%;
+    padding: 0.85rem 0.95rem;
+    font-size: 0.95rem;
+    line-height: 1.35;
+    color: var(--saas-text-heading);
+    text-align: left;
+    background: #ffffff;
+    border-radius: 10px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .app-header__dropdown-menu li + li {
+    margin-top: 0.3rem;
   }
 
   .app-header__actions {
