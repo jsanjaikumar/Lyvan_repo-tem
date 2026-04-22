@@ -40,7 +40,7 @@ export const featuredServices = [
     title: "File Preparation",
     summary: "Extract and prepare content for multilingual workflows",
     capabilities: ["OCR technology extraction", "Multi-language support"],
-    image: asset("lyvan/card_1.png"),
+    image: asset("lyvan/file_conversation-new.png"),
     badge: "Core Service",
   },
   {
@@ -48,7 +48,7 @@ export const featuredServices = [
     title: "Post Translation DTP",
     summary: "Professional layout and design for translated content",
     capabilities: ["Multi-byte language support", "Ready-to-print delivery"],
-    image: asset("lyvan/card_2.png"),
+    image: asset("lyvan/Post_translation_DTP-new.jpg"),
     badge: "Most Requested",
   },
   {
@@ -56,7 +56,7 @@ export const featuredServices = [
     title: "Content Updation",
     summary: "Keep your materials current with regular updates",
     capabilities: ["Annual & fund reports", "Modification management"],
-    image: asset("lyvan/card_3.png"),
+    image: asset("lyvan/Content_Updation.jpg"),
     badge: "Core Service",
   },
   {
@@ -64,7 +64,7 @@ export const featuredServices = [
     title: "Standalone DQA",
     summary: "Comprehensive quality assurance for typeset files",
     capabilities: ["Layout verification", "Content accuracy checking"],
-    image: asset("lyvan/card_4.png"),
+    image: asset("lyvan/Standalone_DQA-new.png"),
     badge: "Quality Layer",
   },
   {
@@ -72,7 +72,7 @@ export const featuredServices = [
     title: "Quality Assurance",
     summary: "End-to-end QA ensuring delivery excellence",
     capabilities: ["Consistency verification", "Multi-checkpoint testing"],
-    image: asset("lyvan/card_5.png"),
+    image: asset("lyvan/Quality_Assurance-new.png"),
     badge: "Quality Layer",
   },
   {
@@ -80,7 +80,7 @@ export const featuredServices = [
     title: "Project Management",
     summary: "Expert coordination from planning to delivery",
     capabilities: ["Timeline management", "Resource optimization"],
-    image: asset("lyvan/card_6.png"),
+    image: asset("lyvan/Project-Management-new.png"),
     badge: "Support Service",
   },
 ];
