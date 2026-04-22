@@ -177,7 +177,7 @@ export default async function handler(req, res) {
 
        <p>Hi ${name},</p>
 
-<p>Thank you for choosing <strong>Lyvan</strong> 🙌</p>
+<p>Thank you for choosing <strong>Lyvan</strong> </p>
 
 <p>We’ve received your request and are excited to work with you.</p>
 
