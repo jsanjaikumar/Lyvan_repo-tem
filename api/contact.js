@@ -123,16 +123,16 @@ export default async function handler(req, res) {
     // 1️⃣ ADMIN EMAIL (Lyvan receives full lead)
     // ==========================================
     await transporter.sendMail({
-      from: `"Lyvan Website" <${EMAIL}>`,
+      from: `"Lyvan " <${EMAIL}>`,
       to: EMAIL,
       replyTo: email,
-      subject: `📩 New Lead - ${subject}`,
+      subject: `📩 Lyvan New Lead - ${subject}`,
       html: `
       <div style="font-family: Arial; background:#f6f6f6; padding:20px;">
         <div style="max-width:600px;margin:auto;background:#ffffff;border-radius:10px;overflow:hidden;box-shadow:0 0 10px rgba(0,0,0,0.1);">
           
           <div style="background:#0d6efd;color:#fff;padding:15px;">
-            <h2 style="margin:0;">📬 New Lead from Lyvan Website</h2>
+            <h2 style="margin:0;">📬 New Lead from Lyvan</h2>
           </div>
 
           <div style="padding:20px;">
@@ -170,7 +170,7 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"Lyvan Team" <${EMAIL}>`,
       to: email,
-      subject: "✅ Lyvan received your message",
+      subject: "Lyvan received your message",
       html: `
       <div style="font-family: Arial; padding:20px;">
         <h2>Hi ${name},</h2>
@@ -179,7 +179,7 @@ export default async function handler(req, res) {
 
         <p>We have successfully received your request.</p>
 
-        <p>Our team will get back to you within <strong>24 hours</strong>.</p>
+        <p>Our team will get back to you within <strong>few hours</strong>.</p>
 
         <br/>
 
